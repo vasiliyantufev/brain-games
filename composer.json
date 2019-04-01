@@ -1,9 +1,15 @@
 {
     "name": "walle/brain-games",
+    "type": "project",
 	"bin": [
 		"bin/brain-games"
 	],
 
+    "description": "Brain Games",
+    "keywords": [
+      "hexlet",
+      "brain-games"
+    ],
     "autoload": {
       "files": [
           "src/Cli.php"
