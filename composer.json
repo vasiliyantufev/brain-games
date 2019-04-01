@@ -1,0 +1,13 @@
+{
+    "name": "walle/brain-games",
+	"bin": [
+		"bin/brain-games"
+	],
+    "authors": [
+        {
+            "name": "Vasiliy Antufev",
+            "email": "vasiliyantufev@gmail.com"
+        }
+    ],
+    "require": {}
+}
