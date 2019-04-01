@@ -1,10 +1,10 @@
 {
     "name": "walle/brain-games",
     "type": "project",
+    "minimum-stability":"dev",
 	"bin": [
 		"bin/brain-games"
 	],
-
     "description": "Brain Games",
     "keywords": [
       "hexlet",
