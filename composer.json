@@ -3,11 +3,25 @@
 	"bin": [
 		"bin/brain-games"
 	],
+
+    "autoload": {
+      "files": [
+          "src/Cli.php"
+      ]
+    },
     "authors": [
         {
             "name": "Vasiliy Antufev",
             "email": "vasiliyantufev@gmail.com"
         }
     ],
-    "require": {}
+    "scripts": {
+        "phpcs": "phpcs"
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    }
 }
