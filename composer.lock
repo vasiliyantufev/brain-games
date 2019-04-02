@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b97aec3da3249f9e2336e3279a048b2d",
+    "content-hash": "7ba389d9b4c6d1fbe4f81d312e699965",
     "packages": [
         {
             "name": "wp-cli/php-cli-tools",
@@ -60,16 +60,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.4.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "5b4333b4010625d29580eb4a41f1e53251be6baa"
+                "reference": "e56ae06f17606148a6b88baeb40f99b10e777373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5b4333b4010625d29580eb4a41f1e53251be6baa",
-                "reference": "5b4333b4010625d29580eb4a41f1e53251be6baa",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/e56ae06f17606148a6b88baeb40f99b10e777373",
+                "reference": "e56ae06f17606148a6b88baeb40f99b10e777373",
                 "shasum": ""
             },
             "require": {
@@ -107,11 +107,11 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-03-19T03:22:27+00:00"
+            "time": "2019-04-01T05:02:36+00:00"
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
