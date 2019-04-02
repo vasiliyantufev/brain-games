@@ -1,4 +1,5 @@
-#!/usr/bin/php
+#!/usr/bin/env php
+
 <?php
 
 use function BrainGames\Cli\run;
