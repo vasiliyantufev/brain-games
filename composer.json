@@ -1,7 +1,6 @@
 {
     "name": "walle/brain-games",
-    "type": "project",
-    "version": "1.0.0",
+    "type": "library",
     "bin": [
 		"bin/brain-games"
 	],
