@@ -2,7 +2,8 @@
     "name": "walle/brain-games",
     "type": "project",
     "version": "0.1.1",
-	"bin": [
+    "minimum-stability": "dev",
+    "bin": [
 		"bin/brain-games"
 	],
     "description": "Brain Games",
