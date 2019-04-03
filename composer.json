@@ -2,16 +2,18 @@
     "name": "walle/brain-games",
     "type": "library",
     "bin": [
-		"bin/brain-games"
+        "bin/brain-games"
 	],
     "description": "Brain Games",
     "keywords": [
-      "hexlet",
-      "brain-games"
+        "hexlet",
+        "brain-games"
     ],
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Games.php",
+            "src/Games/IsEven.php"
         ]
     },
     "authors": [

@@ -6,3 +6,4 @@ Project hexlet: brain-games
 
 Asciinema
 <a href="https://asciinema.org/a/hlYhbJG9T6cxQ4DUh0lnbcBnh">Brain Games</a>
+<a href="https://asciinema.org/a/u19bADKXkRRlIy7Tfo3Kxl2yZ">IsEven</a>
