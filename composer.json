@@ -12,8 +12,8 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/Games.php",
-            "src/Games/IsEven.php"
+            "src/Game.php",
+            "src/Games/Even.php"
         ]
     },
     "authors": [
