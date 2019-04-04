@@ -18,19 +18,18 @@ function run()
 
         [$randomNumber, $rightAnswer] = game();
 
-        line('Question: ' . $randomNumber);
+        line("Question: {$randomNumber}");
         $myAnswer = prompt('Your answer');
-
 
         if ($myAnswer === $rightAnswer) {
             line('Correct!');
         } else {
-            line($myAnswer . ' is wrong answer ;(. Correct answer was ' . $rightAnswer);
-            line("Let's try again, " . $name . "!") ;
+            line('{$myAnswer} is wrong answer ;(. Correct answer was {$rightAnswer}');
+            line("Let's try again, %s!", $name) ;
             break;
         }
     }
     if ($index === ROUNDS) {
-        line('Congratulations! ' . $name);
+        line("Congratulations! %s", $name);
     }
 }
