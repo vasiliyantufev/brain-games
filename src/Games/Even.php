@@ -2,13 +2,15 @@
 
 namespace Games\Even;
 
+const MIN_NUMBER = 1;
+const MAX_NUMBER = 15;
 
-function game($num, $answer)
+function game()
 {
-    $rightAnswer = isEven($num) ? 'yes' : 'no';
-    $check = $answer === $rightAnswer ? true : false;
+    $randomNumber = rand(MIN_NUMBER, MAX_NUMBER);
+    $rightAnswer = isEven($randomNumber) ? 'yes' : 'no';
 
-    return [$check, $rightAnswer];
+    return [$randomNumber, $rightAnswer];
 }
 
 function isEven(int $number): bool
