@@ -9,3 +9,4 @@ Asciinema
 <a href="https://asciinema.org/a/u19bADKXkRRlIy7Tfo3Kxl2yZ">IsEven</a>
 <a href="https://asciinema.org/a/pkmqIIH01LtpWPov4ujuLrMqt">Calc</a>
 <a href="https://asciinema.org/a/Z3aFWWg07uxT8O1yxPHqjPeqG">Gcd</a>
+<a href="https://asciinema.org/a/d0kHnvwrKTW4h3ipc13x16Iyy">Progression</a>
