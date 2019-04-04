@@ -25,7 +25,7 @@ function run(callable $game)
         } else {
             line("{$myAnswer} is wrong answer ;(. Correct answer was {$rightAnswer}");
             line("Let's try again, %s!", $name) ;
-            exit();
+            break;
         }
     }
     if ($index === ROUNDS) {
