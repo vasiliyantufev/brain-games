@@ -40,5 +40,3 @@ function calc($firstNumber, $operand, $secondNumber)
     }
     return $answer;
 }
-
-game();
