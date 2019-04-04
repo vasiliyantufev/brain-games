@@ -1,8 +1,7 @@
 #!/usr/bin/env php
 
 <?php
-
-use function BrainGames\Game\run;
+use function BrainGames\Cli\run;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
