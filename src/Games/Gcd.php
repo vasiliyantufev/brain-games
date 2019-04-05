@@ -5,6 +5,7 @@ namespace Games\Gcd;
 use function BrainGames\Game\run;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 15;
+const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
 function game()
 {
@@ -18,7 +19,7 @@ function game()
         return [$question, strval($gcd)];
     };
 
-    run($game);
+    run(DESCRIPTION, $game);
 }
 
 function gcd($a, $b)

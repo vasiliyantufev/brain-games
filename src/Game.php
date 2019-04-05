@@ -7,10 +7,10 @@ use function cli\prompt;
 //use function Games\Even\game;
 const ROUNDS = 3;
 
-function run(callable $game)
+function run($description, callable $game)
 {
     line('Welcome to the Brain Game!');
-    line('Answer "yes" if number even otherwise answer "no".');
+    line($description);
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 

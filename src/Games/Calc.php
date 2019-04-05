@@ -7,6 +7,7 @@ use function BrainGames\Game\run;
 const OPERANDS = ["+", "-", "*"];
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 15;
+const DESCRIPTION = 'What is the result of the expression?';
 
 function game()
 {
@@ -21,7 +22,7 @@ function game()
         return [$question, strval($answer)];
     };
 
-    run($game);
+    run(DESCRIPTION, $game);
 }
 
 function calc($firstNumber, $operand, $secondNumber)

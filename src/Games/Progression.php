@@ -6,6 +6,7 @@ use function BrainGames\Game\run;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 15;
 const SIZE_PROGRESSION = 10;
+const DESCRIPTION = 'What number is missing in the progression?';
 
 function game()
 {
@@ -24,7 +25,8 @@ function game()
 
         return [$question, strval($answer)];
     };
-    run($game);
+
+    run(DESCRIPTION, $game);
 }
 
 function progression($start, $step, $arrayProgression = []): array
