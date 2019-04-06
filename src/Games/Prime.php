@@ -20,7 +20,7 @@ function startGame()
 
 function isPrime(int $number): bool
 {
-    if ($number == 1) {
+    if ($number <= 1) {
         return false;
     }
     for ($d = 2; $d * $d <= $number; $d++) {
