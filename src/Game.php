@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 const ROUNDS = 3;
 
-function run($description, callable $game)
+function run($description, callable $getQuestionAndAnswer)
 {
     line('Welcome to the Brain Game!');
     line($description);
@@ -14,7 +14,7 @@ function run($description, callable $game)
     line("Hello, %s!", $name);
 
     for ($index = 0; $index < ROUNDS; $index++) {
-        [$question, $rightAnswer] = $game();
+        [$question, $rightAnswer] = $getQuestionAndAnswer();
 
         line("Question: {$question}");
         $myAnswer = prompt('Your answer');
