@@ -4,7 +4,6 @@ namespace BrainGames\Game;
 
 use function cli\line;
 use function cli\prompt;
-//use function Games\Even\game;
 const ROUNDS = 3;
 
 function run($description, callable $game)
