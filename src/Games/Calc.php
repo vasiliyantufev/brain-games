@@ -17,7 +17,7 @@ function startGame()
         $operand = OPERANDS[array_rand(OPERANDS)];
 
         $question = "{$firstNumber} {$operand} {$secondNumber}";
-        $answer = strval(calc($firstNumber, $operand, $secondNumber));
+        $answer = strval(calculateAnswer($firstNumber, $operand, $secondNumber));
 
         return [$question, $answer];
     };
@@ -25,7 +25,7 @@ function startGame()
     run(DESCRIPTION, $getQuestionAndAnswer);
 }
 
-function calc($firstNumber, $operand, $secondNumber): int
+function calculateAnswer($firstNumber, $operand, $secondNumber): int
 {
     switch ($operand) {
         case "+":
