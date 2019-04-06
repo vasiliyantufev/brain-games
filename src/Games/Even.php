@@ -1,6 +1,6 @@
 <?php
 
-namespace Games\Even;
+namespace BrainGames\Games\Even;
 
 use function BrainGames\Game\run;
 const MIN_NUMBER = 1;

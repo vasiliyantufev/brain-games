@@ -1,6 +1,6 @@
 <?php
 
-namespace Games\Progression;
+namespace BrainGames\Games\Progression;
 
 use function BrainGames\Game\run;
 const MIN_NUMBER = 1;

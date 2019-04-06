@@ -1,6 +1,6 @@
 <?php
 
-namespace Games\Gcd;
+namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Game\run;
 const MIN_NUMBER = 1;

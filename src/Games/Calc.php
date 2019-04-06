@@ -1,6 +1,6 @@
 <?php
 
-namespace Games\Calc;
+namespace BrainGames\Games\Calc;
 
 use function BrainGames\Game\run;
 
@@ -25,19 +25,14 @@ function startGame()
     run(DESCRIPTION, $getQuestionAndAnswer);
 }
 
-function calc($firstNumber, $operand, $secondNumber)
+function calc($firstNumber, $operand, $secondNumber): int
 {
-    $answer = null;
     switch ($operand) {
         case "+":
-            $answer = $firstNumber + $secondNumber;
-            break;
+            return $firstNumber + $secondNumber;
         case "-":
-            $answer = $firstNumber - $secondNumber;
-            break;
+            return $firstNumber - $secondNumber;
         case "*":
-            $answer = $firstNumber * $secondNumber;
-            break;
+            return $firstNumber * $secondNumber;
     }
-    return $answer;
 }

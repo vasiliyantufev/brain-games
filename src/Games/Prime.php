@@ -1,6 +1,6 @@
 <?php
 
-namespace Games\Prime;
+namespace BrainGames\Games\Prime;
 
 use function BrainGames\Game\run;
 const MIN_NUMBER = 1;
