@@ -7,19 +7,19 @@ const MIN_NUMBER = 1;
 const MAX_NUMBER = 15;
 const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
-function game()
+function startGame()
 {
-    $game = function () {
+    $questionAndAnswer = function () {
         $firstNumber = rand(MIN_NUMBER, MAX_NUMBER);
         $secondNumber = rand(MIN_NUMBER, MAX_NUMBER);
 
         $question = "{$firstNumber} {$secondNumber}";
-        $gcd = gcd($firstNumber, $secondNumber);
+        $answer = strval(gcd($firstNumber, $secondNumber));
 
-        return [$question, strval($gcd)];
+        return [$question, $answer];
     };
 
-    run(DESCRIPTION, $game);
+    run(DESCRIPTION, $questionAndAnswer);
 }
 
 function gcd($a, $b)

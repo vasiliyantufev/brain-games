@@ -9,20 +9,20 @@ const MIN_NUMBER = 1;
 const MAX_NUMBER = 15;
 const DESCRIPTION = 'What is the result of the expression?';
 
-function game()
+function startGame()
 {
-    $game = function () {
+    $questionAndAnswer = function () {
         $firstNumber = rand(MIN_NUMBER, MAX_NUMBER);
         $secondNumber = rand(MIN_NUMBER, MAX_NUMBER);
         $operand = OPERANDS[array_rand(OPERANDS)];
 
         $question = "{$firstNumber} {$operand} {$secondNumber}";
-        $answer = calc($firstNumber, $operand, $secondNumber);
+        $answer = strval(calc($firstNumber, $operand, $secondNumber));
 
-        return [$question, strval($answer)];
+        return [$question, $answer];
     };
 
-    run(DESCRIPTION, $game);
+    run(DESCRIPTION, $questionAndAnswer);
 }
 
 function calc($firstNumber, $operand, $secondNumber)

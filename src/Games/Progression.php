@@ -8,32 +8,32 @@ const MAX_NUMBER = 15;
 const SIZE_PROGRESSION = 10;
 const DESCRIPTION = 'What number is missing in the progression?';
 
-function game()
+function startGame()
 {
-    $game = function () {
+    $questionAndAnswer = function () {
 
         $start = rand(MIN_NUMBER, MAX_NUMBER);
         $step = rand(MIN_NUMBER, MAX_NUMBER);
 
-        $progression = progression($start, $step);
+        $progression = getProgression($start, $step);
         $position = array_rand($progression);
 
-        $answer = $progression[$position];
+        $answer = strval($progression[$position]);
         $progression[$position] = '..';
 
         $question = implode(" ", $progression);
 
-        return [$question, strval($answer)];
+        return [$question, $answer];
     };
 
-    run(DESCRIPTION, $game);
+    run(DESCRIPTION, $questionAndAnswer);
 }
 
-function progression($start, $step, $arrayProgression = []): array
+function getProgression($start, $step): array
 {
-    $arrayProgression[0] = $start;
+    $progression[] = $start;
     for ($i = 1; $i < SIZE_PROGRESSION; $i++) {
-        $arrayProgression[$i] = $arrayProgression[$i - 1] + $step;
+        $progression[$i] = $progression[$i - 1] + $step;
     }
-    return $arrayProgression;
+    return $progression;
 }

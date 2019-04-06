@@ -7,15 +7,15 @@ const MIN_NUMBER = 1;
 const MAX_NUMBER = 15;
 const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function game()
+function startGame()
 {
-    $game = function () {
-        $randomNumber = rand(MIN_NUMBER, MAX_NUMBER);
-        $rightAnswer = isPrime($randomNumber) ? 'yes' : 'no';
-        return [$randomNumber, $rightAnswer];
+    $questionAndAnswer = function () {
+        $question = rand(MIN_NUMBER, MAX_NUMBER);
+        $answer = isPrime($question) ? 'yes' : 'no';
+        return [$question, $answer];
     };
 
-    run(DESCRIPTION, $game);
+    run(DESCRIPTION, $questionAndAnswer);
 }
 
 function isPrime(int $number): bool
@@ -23,12 +23,10 @@ function isPrime(int $number): bool
     if ($number == 1) {
         return false;
     }
-
     for ($d = 2; $d * $d <= $number; $d++) {
         if ($number % $d == 0) {
             return false;
         }
     }
-
     return true;
 }

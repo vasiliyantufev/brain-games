@@ -7,15 +7,15 @@ const MIN_NUMBER = 1;
 const MAX_NUMBER = 15;
 const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 
-function game()
+function startGame()
 {
-    $game = function () {
-        $randomNumber = rand(MIN_NUMBER, MAX_NUMBER);
-        $rightAnswer = isEven($randomNumber) ? 'yes' : 'no';
-        return [$randomNumber, $rightAnswer];
+    $questionAndAnswer = function () {
+        $question = rand(MIN_NUMBER, MAX_NUMBER);
+        $answer = isEven($question) ? 'yes' : 'no';
+        return [$question, $answer];
     };
 
-    run(DESCRIPTION, $game);
+    run(DESCRIPTION, $questionAndAnswer);
 }
 
 function isEven(int $number): bool
