@@ -31,8 +31,7 @@ function startGame()
 
 function getProgression($start, $step): array
 {
-    $progression[] = $start;
-    for ($i = 1; $i < SIZE_PROGRESSION; $i++) {
+    for ($i = 1, $progression[] = $start; $i < SIZE_PROGRESSION; $i++) {
         $progression[$i] = $progression[$i - 1] + $step;
     }
     return $progression;
