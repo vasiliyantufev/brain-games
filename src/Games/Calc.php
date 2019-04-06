@@ -11,7 +11,7 @@ const DESCRIPTION = 'What is the result of the expression?';
 
 function startGame()
 {
-    $questionAndAnswer = function () {
+    $getQuestionAndAnswer = function () {
         $firstNumber = rand(MIN_NUMBER, MAX_NUMBER);
         $secondNumber = rand(MIN_NUMBER, MAX_NUMBER);
         $operand = OPERANDS[array_rand(OPERANDS)];
@@ -22,7 +22,7 @@ function startGame()
         return [$question, $answer];
     };
 
-    run(DESCRIPTION, $questionAndAnswer);
+    run(DESCRIPTION, $getQuestionAndAnswer);
 }
 
 function calc($firstNumber, $operand, $secondNumber)

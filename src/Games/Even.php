@@ -9,13 +9,13 @@ const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 
 function startGame()
 {
-    $questionAndAnswer = function () {
+    $getQuestionAndAnswer = function () {
         $question = rand(MIN_NUMBER, MAX_NUMBER);
         $answer = isEven($question) ? 'yes' : 'no';
         return [$question, $answer];
     };
 
-    run(DESCRIPTION, $questionAndAnswer);
+    run(DESCRIPTION, $getQuestionAndAnswer);
 }
 
 function isEven(int $number): bool
