@@ -4,14 +4,6 @@
 
 ## Project hexlet: brain-games
 
-## Asciinema
-<a href="https://asciinema.org/a/hlYhbJG9T6cxQ4DUh0lnbcBnh">Brain Games</a>
-<a href="https://asciinema.org/a/u19bADKXkRRlIy7Tfo3Kxl2yZ">IsEven</a>
-<a href="https://asciinema.org/a/pkmqIIH01LtpWPov4ujuLrMqt">Calc</a>
-<a href="https://asciinema.org/a/Z3aFWWg07uxT8O1yxPHqjPeqG">Gcd</a>
-<a href="https://asciinema.org/a/d0kHnvwrKTW4h3ipc13x16Iyy">Progression</a>
-<a href="https://asciinema.org/a/BgiD38ZwJSiLNPhZODI0fjTOx">IsPrime</a>
-
 ## REQUIREMENTS
 
 * php 7.2+
@@ -28,3 +20,6 @@
 * brain-gcd - The essence of the game is as follows: the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common factor of these numbers.
 * brain-prime - We show the player a series of numbers that forms an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
 * brain-progression - Show the player a number and he must determine whether it is simple or not.
+
+## Example
+[![asciicast](https://asciinema.org/a/JYHhfM6286DFeEau04UiOnFYK.svg)](https://asciinema.org/a/JYHhfM6286DFeEau04UiOnFYK)
