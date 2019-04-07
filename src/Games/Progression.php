@@ -16,10 +16,10 @@ function startGame()
         $step = rand(MIN_NUMBER, MAX_NUMBER);
 
         $progression = buildProgression($start, $step);
-        $hidden = array_rand($progression);
+        $hiddenPosition = array_rand($progression);
 
-        $answer = strval($progression[$hidden]);
-        $progression[$hidden] = '..';
+        $answer = (string)$progression[$hiddenPosition];
+        $progression[$hiddenPosition] = '..';
 
         $question = implode(" ", $progression);
 

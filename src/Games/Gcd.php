@@ -13,8 +13,8 @@ function startGame()
         $firstNumber = rand(MIN_NUMBER, MAX_NUMBER);
         $secondNumber = rand(MIN_NUMBER, MAX_NUMBER);
 
-        $question = "{$firstNumber} {$secondNumber}";
-        $answer = strval(gcd($firstNumber, $secondNumber));
+        $question = "$firstNumber $secondNumber";
+        $answer = (string)gcd($firstNumber, $secondNumber);
 
         return [$question, $answer];
     };
