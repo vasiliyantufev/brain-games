@@ -2,8 +2,13 @@
     "name": "walle/brain-games",
     "type": "project",
     "bin": [
-        "bin/brain-games"
-	],
+        "bin/brain-calc",
+        "bin/brain-even",
+        "bin/brain-games",
+        "bin/brain-gcd",
+        "bin/brain-prime",
+        "bin/brain-progression"
+    ],
     "description": "Brain Games",
     "keywords": [
         "hexlet",
