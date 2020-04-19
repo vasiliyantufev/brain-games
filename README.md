@@ -14,12 +14,12 @@
 `composer global require walle/brain-games`
 
 ## Games list
-* brain-games - We ask the user a name and welcome.
-* brain-even - The essence of the game is as follows: a random number is shown to the user. And he needs to answer yes, if the number is even, or no - if it is odd.
-* brain-calc - The essence of the game is as follows: the user is shown a random mathematical expression, for example, 35 + 16, which needs to be calculated and the correct answer recorded.
-* brain-gcd - The essence of the game is as follows: the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common factor of these numbers.
+* brain-games - We ask a user's name and welcome him/her.
+* brain-even - The point of the game is the following: a random number is shown to the user. He needs to say yes, if the number is even, or no - if it is odd.
+* brain-calc - The point of the game is the following: the user is shown a random mathematical task, for example, 35 + 16, which the user need to solve and write the correct answer.
+* brain-gcd - The point of the game is the following: the user is shown two random numbers, for example, 25 50. The user must solve the task and write the greatest common factor of these numbers.
 * brain-prime - We show the player a series of numbers that forms an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
-* brain-progression - Show the player a number and he must determine whether it is simple or not.
+* brain-progression - We show the player a number and he must determine whether it is simple or not.
 
 ## Example
 [![asciicast](https://asciinema.org/a/JYHhfM6286DFeEau04UiOnFYK.svg)](https://asciinema.org/a/JYHhfM6286DFeEau04UiOnFYK)
